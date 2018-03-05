@@ -1,0 +1,177 @@
+li{
+	list-style: none;
+}
+
+
+/* navbar */
+
+.navbar {
+	margin-bottom: 0px;
+	background-color: #F26900;
+}
+.navbar-brand > img{
+	max-width: 50vh;
+}
+.navbar-default .navbar-nav > li > a {
+	color: white;
+}
+.navbar-default .navbar-nav > li > a:hover {
+	color: grey;
+	border-bottom: 5px solid white;
+	border-radius: 2px;
+	padding-bottom: 3px;;
+}
+
+/* Pills Settings */
+
+.nav-pills > li > a {
+	color: black;
+	border-radius: 4px;
+}
+
+.nav-pills > li.active > a {
+	color: #F26900;
+	background-color: transparent;
+	border-bottom: 3px solid #F26900;
+	border-radius: 3px;
+	padding-bottom: 3px;
+}
+.nav-pills > li.active > a::before, .nav-pills > li.active > a::after{
+	font-family: tngan;
+	
+}
+.nav-pills > li > a:hover,
+.nav-pills > li.active > a:hover {
+	color: #F26900;
+	background-color: transparent;
+	border-bottom: 3px solid #F26900;
+	border-radius: 3px;
+	padding-bottom: 3px;
+}
+.nav-pills > li > a:hover::before, .nav-pills > li > a:hover::after{
+	font-family: tngan;
+	
+}
+
+/* Thumbnail Settings */
+
+#thumbnails .row {
+	padding: 10px;
+}
+.thumbnail {
+	background-color: black;
+	border-color: transparent;
+}
+.thumbnail {
+	max-width: 330px;
+}
+
+.thumbnail:hover{
+	opacity: 1;
+}
+.text {
+	position: absolute;
+	top: 15%;
+	left: 25%;
+	font-family: party, sans-serif;
+}
+.name{
+	position: absolute;
+	font-size: 2.5em;
+	color: white; 
+}
+.thumbnail:hover .name {
+}
+.reward {
+	max-width: 70%;
+	text-align: center;
+	background-color: rgba(256, 256, 256, 0.7);
+	border-radius:5px;
+	font-size: 2em;
+}
+.reward > span {
+	color: #F26900;
+}
+.text-noreward {
+	position: absolute;
+	top: 10%;
+	left: 35%;
+	font-family: party, sans-serif;
+	font-size: 2.5em;
+}
+.reward-gimli {
+	background-color: transparent;
+	color: #F26900;
+	text-decoration: line-through;
+}
+.gimli{
+	position: absolute;
+	top: 55%;
+	left: 20%;
+	color: white;
+	font-size: 1em;
+}
+.thumbnail:hover .reward {
+	display: none;
+}
+.caption {
+	font-family: party, sans-serif;
+}
+
+
+/* Media Screen */
+
+@media screen and (min-width: 768px) {
+	.divider-vertical {
+		height: 26px;
+		margin: 0 8px;
+		top: 11px;
+		border-left: 2px solid #fff;
+	}
+	.carousel {
+		display: block;
+		margin: 100px -15px 0 -15px;
+	}
+	#fellows {
+	margin-top: 0px;
+	}
+}
+@media screen and (min-width: 992px) {
+	.navbar-brand > img {
+		max-width: 21vw;
+	}
+	.carousel {
+		display: block;
+		margin: 50px -15px 0px -15px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.carousel {
+		margin-top: 50px;
+	}
+	.navbar-nav {
+		position: relative;
+		left: 110px;
+	}
+}
+
+
+
+
+
+@font-face {
+ 	font-family: 'anicb';
+ 	src: url('font/aniron/anicb.ttf');
+}
+@font-face {
+	font-family: 'tngani';
+	src: url('font/tengwar/tngani.ttf');
+}
+@font-face {
+	font-family: 'tngan';
+	src: url('font/tengwar/tngan.ttf');
+}
+@font-face {
+	font-family: 'party';
+	src: url('font/party-business/partybusiness.ttf');
+}
